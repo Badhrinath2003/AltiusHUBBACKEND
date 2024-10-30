@@ -17,10 +17,10 @@ app.use("/api/invoices", invoiceRoutes);
 
 // connect to db
 mongoose
-  .connect("mongoDB_URI", {
+  .connect("mongodb+srv://badhrinathreddy2003:4CNVmrmqfYEOBrDt@cluster0.7km34.mongodb.net/", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    dbName: "database_name",
+    dbName: "invoice",
   })
   .then(() => {
     // listen for requests
