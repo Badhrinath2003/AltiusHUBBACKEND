@@ -24,6 +24,7 @@ const createInvoice = async (req, res) => {
   else{
     res.status(400).json({ error: "Not Valid" });
   }
+  // functions to validate
   function validateItem(items){
     for(var i=0;i<items.length;i++){
       var ob = items[i];
@@ -49,7 +50,7 @@ const createInvoice = async (req, res) => {
   }
 };
 
-// delete a workout
+// delete a invoice
 const deleteInvoice = async (req, res) => {
   const { id } = req.params;
   const invoice = await Invoice.findOneAndDelete({ _id: id }); // return the deleted document
