@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const invoiceRoutes = require("./routes/workouts");
+const invoiceRoutes = require("./routes/invoices");
 
 // express app
 const app = express();
